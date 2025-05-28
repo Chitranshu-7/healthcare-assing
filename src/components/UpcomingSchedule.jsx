@@ -1,16 +1,9 @@
 import React from 'react';
 import SimpleAppointmentCard from './SimpleAppointmentCard';
 import '../styles/UpcomingSchedule.css';
+import { saturdayAppointments, thursdayAppointments } from '../data/appointments';
 
-const thursdayAppointments = [
-  { title: "Health checkup complete", time: "11:00 AM", icon: "🩺" },
-  { title: "Ophthalmologist", time: "14:00 PM", icon: "👁️" }
-];
 
-const saturdayAppointments = [
-  { title: "Cardiologist", time: "12:00 AM", icon: "❤️" },
-  { title: "Neurologist", time: "16:00 PM", icon: "🧠" }
-];
 
 const UpcomingSchedule = () => {
   return (
