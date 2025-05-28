@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 20px;
     flex: 1 1 250px;
-    /* 👈 Use flex size */
+  
     max-width: 260px;
 }
 

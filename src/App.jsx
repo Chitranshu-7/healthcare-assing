@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import DashboardSection from './components/DashboardSection';
 import RightPanel from './components/RightPanel';
-import { Stethoscope } from 'lucide-react'; // ✅ Import Lucide icon
+import { Stethoscope } from 'lucide-react'; 
 import './App.css';
 
 function App() {

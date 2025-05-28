@@ -6,13 +6,12 @@
   width: 100%;
 }
 
-/* Container with relative position for icon */
+
 .search-bar-container {
   position: relative;
   width: 90%;
 }
 
-/* Input with padding on right for bell */
 .search-bar {
   width: 100%;
   padding: 12px 40px 12px 16px;
@@ -23,7 +22,7 @@
   box-sizing: border-box;
 }
 
-/* Bell Icon inside input */
+
 .search-icon {
   position: absolute;
   right: 12px;
