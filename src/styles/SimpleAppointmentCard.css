@@ -1,0 +1,40 @@
+.appointment-card {
+  position: relative;
+  background-color: #e7eaff;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  max-width: 280px;
+  min-width: 220px;
+  flex: 1 1 45%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.icon-top-right {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.1rem;
+}
+
+.appointment-content {
+  margin-top: 1.6rem;
+}
+
+.appointment-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 0.3rem;
+}
+
+.appointment-time {
+  font-size: 0.75rem;
+  color: #555;
+  opacity: 0.85;
+}

@@ -1,0 +1,71 @@
+.event-cards-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  flex: 1;
+  min-width: 150px;
+  position: relative; /* for absolute icon */
+  padding: 1.25rem 1rem 1rem;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.dentist-card {
+  background-color: #5d5fef;
+  color: white;
+}
+
+.physio-card {
+  background-color: #e6eaff;
+  color: #333;
+}
+
+/* Icon Box positioned top-right */
+.icon-box {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box.light {
+  background-color: white;
+}
+
+.event-icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.event-details {
+  margin-top: 2.5rem; /* space to prevent overlapping the icon */
+}
+
+.event-details h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.event-time {
+  font-size: 0.75rem;
+  margin: 4px 0 2px;
+  opacity: 0.9;
+}
+
+.event-doctor {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}

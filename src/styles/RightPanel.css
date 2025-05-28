@@ -1,0 +1,46 @@
+.right-panel {
+  width: 100%;
+
+  background-color: #f8faff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border-left: 1px solid #e0e0e0; */
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.right-top-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.avatar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e5e9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  width: 32px;
+  height: 32px;
+  background-color: #5d5fef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover {
+  background-color: #4a4ccf;
+}

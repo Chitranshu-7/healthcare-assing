@@ -1,0 +1,49 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2d3d;
+}
+
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.anatomy-section {
+  flex: 1;
+  min-width: 300px;
+  /* background-color: #f5f8ff; */
+}
+
+.health-cards-section {
+  flex: 1;
+  min-width: 300px;
+  /* background-color: #f5f8ff; */
+}
+
+.dashboard-activity {
+  width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .dashboard-top {
+    flex-direction: column;
+  }
+
+  .anatomy-section,
+  .health-cards-section {
+    width: 100%;
+  }
+}

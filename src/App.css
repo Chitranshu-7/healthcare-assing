@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html, #root {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #eaf0fa;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-right: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.content-section {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: 220px;
+   /* ✅ Push content beside sidebar */
+}
+
+/* Scrollable middle content */
+.main-content {
+  flex: 1;
+  background-color: #f5f8ff;
+  overflow-y: auto;
+  /* padding: 20px; */
+  scrollbar-width: none;
+}
+.main-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollable right panel */
+.right-panel {
+  flex: 1;
+  background-color: #f5f8ff;
+  overflow-y: auto;
+  /* padding: 20px; */
+  /* border-left: 1px solid #ddd; */
+  scrollbar-width: none;
+}
+.right-panel::-webkit-scrollbar {
+  display: none;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 992px) {
+  .sidebar {
+    transform: translateX(-100%);
+    position: absolute;
+  }
+
+  .app-container.sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .content-section {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .main-content, .right-panel {
+    flex: none;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-content, .right-panel {
+    padding: 10px;
+  }
+}
